@@ -1,0 +1,8 @@
+<ul>
+  {{#each bill in model}}
+    <li>
+      <b>{{bill.bill_id}}</b>: <em>{{bill.description}}</em> <br><br>Scheduled: {{bill.legislative_day}}
+    </li>
+    <hr>
+  {{/each}}
+</ul>
