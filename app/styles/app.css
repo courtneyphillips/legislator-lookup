@@ -2,12 +2,12 @@ body {
   padding: 40px;
 }
 
-div {
-  margin: 20px;
-}
-
 .legislator-name {
-  color: green;
+  color: grey;
   font-weight: bold;
   font-size: medium;
+}
+
+.container {
+  padding: 15px;
 }
