@@ -1,7 +1,11 @@
+<div class="jumbotron bills"><h3>Bills in Congress This week:</h3>
+  <p class="lead">Click each bill's title for more information.</p>
+</div>
+
 <ul>
   {{#each bill in model}}
     <li>
-      <b>{{bill.bill_id}}</b>: <em>{{bill.description}}</em> <br><br>Scheduled: {{bill.legislative_day}}
+      <b><a href="{{bill.bill_url}}">{{bill.bill_id}}</a></b>: <em>{{bill.description}}</em> <br><br>Scheduled: {{bill.legislative_day}}
     </li>
     <hr>
   {{/each}}
