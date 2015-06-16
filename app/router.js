@@ -6,8 +6,9 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.resource('legislators', { path: '/' }, function(){
-    this.resource('contact', { path: 'contact/:zip'});
+  this.resource('home', { path: '/' }),
+  this.resource('legislators', function(){
+    this.resource('contact', {path:':zip'})
   });
 });
 
